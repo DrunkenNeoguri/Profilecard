@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+
+
+/** common **/
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    background-image: url("images/bg-pattern-top.svg"),
+                      url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: -45% 250%, 135% -150%;
+    
+    font-family:"Kumbh Sans", sans-serif;
+    font-size:18px;
+
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin:10rem auto;
+}
+
+.card {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    max-width: 320px;
+
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+
+
+/** header**/
+
+.header img {
+    border-radius: 1rem 1rem 0 0;
+    max-width: 320px;
+}
+
+
+
+/** profile image **/
+
+.profileimage {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+    top:5rem;
+}
+
+.profileimage img {
+    border:5px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+
+
+/** info **/
+
+.info {
+    margin-top:4rem;
+    margin-bottom: 2rem;
+}
+
+.info .main {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    align-content: center;
+}
+
+.info .main {
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: center;
+    align-content: center;
+    margin-bottom:0.5rem;
+}
+
+.info .main .namespace {
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.info .main .agespace {
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+.info .sub .addressspace {
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+
+
+/** stats **/
+
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    border-top: 1px solid hsla(0, 0%, 59%, 20%);
+    padding: 0 50px;
+}
+
+.stats_info {
+    display: flex;
+    flex-direction: column;
+    padding:1rem 0 1rem 0;
+}
+
+.statvalue {
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.statname {
+    font-size: 0.6rem;
+    color: hsl(227, 10%, 46%);
+    letter-spacing: 1px;
+}
+
+
+
+/** mobile size **/
+
+@media (max-width:1000px) {
+    body {
+        background-position: 300% 250%, -200% -150%;
+    }
+}
+
+@media (max-width:800px) {
+    body {
+        background-position: 200% 250%, -100% -120%;
+    }
+}
+
+@media (max-width:640px) {
+    body {
+        background-position: 130% 230%, -20% -130%;
+    }
+}
+
+
+
+/** attribution **/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(0, 0%, 100%);
+}
